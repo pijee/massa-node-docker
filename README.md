@@ -12,7 +12,7 @@ This Dockerfile was made to run easyly a new updated massa-node. It create a ful
 
 ***Why using multiple RUN ?***
 Because sometimes, build can failed and using multiple RUN on build compilation create temporary zones to handle errors and don't wast time. In any case, it's not impact final image size, thanks to multi staging ;)
-<br /><br />
+
 
 ### Build from Dockerfile
 ```
@@ -22,7 +22,6 @@ While compilation, Dockerfile copy some configurations directories and files int
 ```
 $ docker run -it -d --name [name] -p [local-port:container-port] -v [local_base_config:/massa/base_config] -v [local_config:/massa/config] -v [local_storage:/massa/storage] [yourname/imagename]:[rev]
 ```
-<br />
 
 ### Use docker-compose
 A directory with docker-compose.yaml file is made for peoples who wants to run massa-node quickly. It use **volumes** to share configuration files from host to container.
