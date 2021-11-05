@@ -4,8 +4,8 @@ services:
   massa:
     image: pijee/massa-node:latest
     ports:
-      - "33033:33033"
-      - "33035:33035"
+      - "31244:31244"
+      - "31245:31245"
     volumes:
       - "./base_config:/massa/base_config/"
       - "./config:/massa/config/"
