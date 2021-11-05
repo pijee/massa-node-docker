@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  massa:
+    image: massa:1
+    ports:
+      - "33033:33033"
+      - "33035:33035"
+    volumes:
+      - "./base_config:/massa/base_config/"
+      - "./config:/massa/config/"
+      - "./storage:/massa/storage/"
