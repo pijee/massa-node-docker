@@ -30,7 +30,6 @@ A directory with docker-compose.yaml file is made for peoples who wants to run m
 $ cd docker-compose
 $ docker-compose up -d
 ```
-<br />
 
 ### Use docker-hub
 To use docker-hub built images
