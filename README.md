@@ -11,7 +11,7 @@ Go to their [gitlab repository](https://gitlab.com/massalabs/massa).
 This Dockerfile was made to run easyly a new updated massa-node. It create a full compilation environment with multi-staging support, compile massa-node with static libs, extract binary to make a smallsize image from scratch (at least 18mo for now).
 
 ***Why using multiple RUN ?***
-Because sometimes, build can failed and using multiple RUN on build compilation create temporary zones to handle errors and don't wast time. In any case, it's not impact final image size, thanks to multi staging ;)
+Because sometimes, build can failed and using multiple RUN on build compilation create temporary zones to handle errors and don't wast time. In any case, it's not impacting final image size, thanks to multi staging ;)
 
 
 ### Build from Dockerfile
