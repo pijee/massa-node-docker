@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   massa:
-    image: massa:1
+    image: pijee/massa-node:latest
     ports:
       - "33033:33033"
       - "33035:33035"
